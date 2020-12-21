@@ -26,7 +26,7 @@ class DataSet:
             df[['label']] = df[['label']].astype(int)
             df['label'] = df['label'].map({2: -1, 1: 1})
         df['weight'] = 0
-        self.df = shuffle(df)
+        self.df = df
         # df.sample(frac=1)
 
     def print_data(self):
